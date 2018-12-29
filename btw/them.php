@@ -57,7 +57,7 @@ $query=  mysqli_query($conn,$sql);
             <form action="xlthem.php" method="post"> 
             <h3 style="color:red">Thêm học viên</h3>
             HoTen:<input type="text" name="HoTen"><br>
-            NgaySinh:<input type="text" name="NgaySinh"><br>
+            NgaySinh:<input type="date" name="NgaySinh"><br>
             QueQuan:<input type="text" name="QueQuan"><br>
             SoĐienThoai:<input type="text" name="SoDienThoai"><br>
             GioiTinh:<input type="text" name="GioiTinh"><br>

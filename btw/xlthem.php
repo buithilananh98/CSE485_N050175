@@ -1,7 +1,8 @@
 <?php
 var_dump($_POST);
     $a=$_POST['HoTen'];
-    $b=md5($_POST['NgaySinh']);
+   // $b=md5($_POST['NgaySinh']);
+   $b=$_POST['NgaySinh'];
     $c=$_POST['QueQuan'];
     $d=$_POST['SoDienThoai'];
     $e=$_POST['GioiTinh']; 

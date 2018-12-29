@@ -46,17 +46,19 @@
             ?>
             <h3>Cập nhật học viên</h3>
             <form  method="post"> 
-            HoTen:<input type="text" name="HoTen" value="<?php echo($_GET['id']);?>"/><br>
-            NgaySinh:<input type="text" name="NgaySinh"><br>
+            HoTen:<input type="text" name="HoTen"/><br>
+            NgaySinh:<input type="date" name="NgaySinh"><br>
             QueQuan:<input type="text" name="QueQuan"><br>
             SoĐienThoai:<input type="text" name="SoDienThoai"><br>
             GioiTinh:<input type="text" name="GioiTinh"><br>
             KhoaHoc:<input type="text" name="KhoaHoc"><br>
-            <input type ="submit" value="Cập nhật">
+            <input type ="submit" name="update" value="Cập nhật">
             <?php
+            //print_r($_POST);
 if(isset($_POST['update'])){
+    
     $a=$_POST['HoTen'];
-    $b=md5($_POST['NgaySinh']);
+    $b=$_POST['NgaySinh'];
     $c=$_POST['QueQuan'];
     $d=$_POST['SoDienThoai'];
     $e=$_POST['GioiTinh']; 
